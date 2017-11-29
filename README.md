@@ -2,12 +2,13 @@ CPSC-473-Project-2
 
 Christian Medina christian.medina@csu.fullerton.edu
 
-
-
 Ruth Madrid ruthm11@csu.fullerton.edu
 
 Nguyen Tran ntran272@csu.fullerton.edu
 
+Elizabeth Nguyen
+
+David Slusser dslusser13@gmail.com
 
 
 # Overview of the Project
