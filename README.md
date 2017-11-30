@@ -30,7 +30,7 @@ Nguyen Tran ntran272@csu.fullerton.edu
 
 + Project functionality
 
-
+Our website provides
 
 
 # Installation and Configuration
