@@ -1,7 +1,13 @@
 import Controller from '@ember/controller';
-import {gte} from '@ember/object/computed';
-import {and} from '@ember/object/computed';
-import {not} from '@ember/object/computed';
+import {
+  gte
+} from '@ember/object/computed';
+import {
+  and
+} from '@ember/object/computed';
+import {
+  not
+} from '@ember/object/computed';
 
 export default Controller.extend({
   isDisabled: true,
@@ -13,7 +19,7 @@ export default Controller.extend({
   multiplier: 0,
   roundNumber: 0,
   gameFinalScore: 0,
-//  responseMessage: '',
+  //  responseMessage: '',
   firstName: '',
   lastName: '',
 
@@ -82,25 +88,22 @@ export default Controller.extend({
         lastName: lastName,
         score: finalScore
       });
+      newUser.save();
 
-      newUser.save().then((response) => {
-        alert('Success');
-        //this.set('responseMessage', `Thank you! We saved your firstName and LastName with the following id: ${response.get('id')}`);
-        this.set('isDisabled', true);
-        this.set('gameNotStarted', false);
-        this.set('roundFinished', false);
-        this.set('timeForNextRound', true);
-        this.set('roundPoints', 0);
-        this.set('multiplier', 0);
-        this.set('roundNumber', 0);
-        this.set('gameFinalScore', 0);
-        this.set('firstName', '');
-        this.set('lastName', '');
-        this.set('gameFinished', true);
-        //this.set
-      });
-
-
+      alert('Success');
+      //this.set('responseMessage', `Thank you! We saved your firstName and LastName with the following id: ${response.get('id')}`);
+      this.set('isDisabled', true);
+      this.set('gameNotStarted', false);
+      this.set('roundFinished', false);
+      this.set('timeForNextRound', true);
+      this.set('roundPoints', 0);
+      this.set('multiplier', 0);
+      this.set('roundNumber', 0);
+      this.set('gameFinalScore', 0);
+      this.set('firstName', '');
+      this.set('lastName', '');
+      this.set('gameFinished', true);
+      //this.set
 
     }
   }
