@@ -10,14 +10,14 @@ export default Controller.extend({
   multiplier: 0,
   roundNumber: 0,
   gameFinalScore: 0,
-  responseMessage: '',
+//  responseMessage: '',
   firstName: '',
   lastName: '',
 
-  isLength1: Ember.computed.gte('firstName.length', 1),
-  isLength2: Ember.computed.gte('lastName.length', 1),
-  isConditionValid: Ember.computed.and('isLength1', 'isLength2'),
-  isDisabled2: Ember.computed.not('isConditionValid'),
+  isLength1: Controller.computed.gte('firstName.length', 1),
+  isLength2: Controller.computed.gte('lastName.length', 1),
+  isConditionValid: Controller.computed.and('isLength1', 'isLength2'),
+  isDisabled2: Controller.computed.not('isConditionValid'),
 
   actions: {
     startGame() {
@@ -45,8 +45,8 @@ export default Controller.extend({
     },
     nextRound() {
       if (this.roundNumber < 10) {
-        var model = this.get('model');
-        console.log(model);
+        // var model = this.get('model');
+        // console.log(model);
         this.get('target.router').refresh();
         this.set('isDisabled', true);
         this.set('roundFinished', false);
