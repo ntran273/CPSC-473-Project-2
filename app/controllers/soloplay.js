@@ -1,4 +1,7 @@
 import Controller from '@ember/controller';
+import {gte} from '@ember/object/computed';
+import {and} from '@ember/object/computed';
+import {not} from '@ember/object/computed';
 
 export default Controller.extend({
   isDisabled: true,
@@ -14,10 +17,10 @@ export default Controller.extend({
   firstName: '',
   lastName: '',
 
-  isLength1: Controller.computed.gte('firstName.length', 1),
-  isLength2: Controller.computed.gte('lastName.length', 1),
-  isConditionValid: Controller.computed.and('isLength1', 'isLength2'),
-  isDisabled2: Controller.computed.not('isConditionValid'),
+  isLength1: gte('firstName.length', 1),
+  isLength2: gte('lastName.length', 1),
+  isConditionValid: and('isLength1', 'isLength2'),
+  isDisabled2: not('isConditionValid'),
 
   actions: {
     startGame() {
@@ -45,8 +48,8 @@ export default Controller.extend({
     },
     nextRound() {
       if (this.roundNumber < 10) {
-        // var model = this.get('model');
-        // console.log(model);
+        //var model = this.get('model');
+        //console.log(model);
         this.get('target.router').refresh();
         this.set('isDisabled', true);
         this.set('roundFinished', false);
