@@ -1,0 +1,1 @@
+export default Ember.HTMLBars.template({"id":"PGpeVUFs","block":"{\"symbols\":[],\"statements\":[[1,[18,\"outlet\"],false]],\"hasEval\":false}","meta":{"moduleName":"movie-quiz/templates/howtoplay.hbs"}});

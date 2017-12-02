@@ -1,0 +1,1 @@
+/Users/nguyentran/MovieQuiz/tmp/funnel-input_base_path-bsfi97ej.tmp/mixins/ajax-support.js

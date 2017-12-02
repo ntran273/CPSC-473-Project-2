@@ -1,0 +1,4 @@
+QUnit.test('controllers/soloplay.js', function(assert) {
+  assert.expect(1);
+  assert.ok(false, 'controllers/soloplay.js should pass ESLint\n\n17:14 - Use import { gte } from \'@ember/object/computed\'; instead of using Ember.computed.gte (ember/new-module-imports)\n17:14 - \'Ember\' is not defined. (no-undef)\n18:14 - Use import { gte } from \'@ember/object/computed\'; instead of using Ember.computed.gte (ember/new-module-imports)\n18:14 - \'Ember\' is not defined. (no-undef)\n19:21 - Use import { and } from \'@ember/object/computed\'; instead of using Ember.computed.and (ember/new-module-imports)\n19:21 - \'Ember\' is not defined. (no-undef)\n20:16 - Use import { not } from \'@ember/object/computed\'; instead of using Ember.computed.not (ember/new-module-imports)\n20:16 - \'Ember\' is not defined. (no-undef)\n49:9 - Unexpected console statement. (no-console)\n83:28 - \'response\' is defined but never used. (no-unused-vars)');
+});

@@ -1,0 +1,1 @@
+/Users/nguyentran/MovieQuiz/tmp/funnel-input_base_path-A9KefTeX.tmp/torii-adapters/firebase.js

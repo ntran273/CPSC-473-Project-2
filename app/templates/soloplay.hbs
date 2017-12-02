@@ -1,0 +1,53 @@
+<h1>Solo Play</h1>
+
+<div class="jumbotron text-center" hidden= {{gameNotStarted}}>
+  <p>Start a game!</p>
+  <button class="btn btn-primary btn-lg btn-block" {{action 'startGame'}}>Start</button>
+</div>
+<div class="jumbotron text-center" style="min-width:750px;" hidden= {{isDisabled}}>
+  <p id="roundNumber"></p>
+  {{#each model as |movie|}}
+    <button id="{{movie.id}}" {{action 'isBestMovie' movie}} data-best-movie="{{movie.bestMovie}}">
+  <img src="{{movie.poster}}"
+    class="img-rounded float-left"
+    style="max-width:250px; max-height:350px;"
+    alt="{{movie.title}}"
+    >
+  </button>
+  {{/each}}
+  <!--
+<div hidden={{timeForNextRound}}>
+  <br><button class="btn btn-primary btn-lg" {{action 'nextRound'}}>Next Round</button>
+</div>
+-->
+  <br>
+  <p>Round Points: {{roundPoints}}</p>
+</div>
+<div class="jumbotron text-center" hidden= {{gameFinished}}>
+  <b><p>Final Score: {{gameFinalScore}}</p></b>
+  <!--form handler for pushing name to database here-->
+  <div class="jumbotron text-center">
+    <h1>Account Info</h1>
+
+    <br/><br/>
+
+    <p>Please enter your Name</p>
+
+    <div class="form-horizontal form-group form-group-lg row">
+      <div class="col-md-4 col-md-offset-4">
+        <label for="firstName">First Name</label> {{input type="text" value=firstName class="form-control" placeholder="First Name" autofocus="autofocus"}}
+        <label for="lastName">Last Name</label> {{input type="text" value=lastName class="form-control" placeholder="Last Name" autofocus="autofocus"}}
+        <br/>
+        <button class="btn btn-primary btn-lg btn-block" disabled= {{isDisabled2}} {{action 'pushScoreToDatabase'}}>Submit</button>
+
+      </div>
+    </div>
+    {{#if responseMessage}}
+      <div class="alert alert-success">{{responseMessage}}</div>
+    {{/if}}
+    <br/><br/>
+  </div>
+
+</div>
+
+<center>***Note: If movie does not display a poster, hover over for Movie's title***</center>

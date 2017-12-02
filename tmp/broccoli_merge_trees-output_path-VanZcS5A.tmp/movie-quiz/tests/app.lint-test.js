@@ -1,0 +1,1 @@
+/Users/nguyentran/MovieQuiz/tmp/broccoli_merge_trees-input_base_path-63N6hMTE.tmp/2/movie-quiz/tests/app.lint-test.js

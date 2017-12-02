@@ -1,0 +1,1 @@
+/Users/nguyentran/MovieQuiz/tmp/funnel-input_base_path-5KlkqoZs.tmp/instance-initializers/initialize-store-service.js
