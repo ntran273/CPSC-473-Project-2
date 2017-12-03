@@ -8,6 +8,9 @@ import {
 import {
   not
 } from '@ember/object/computed';
+import{
+  match
+} from '@ember/object/computed';
 
 export default Controller.extend({
   isDisabled: true,
@@ -25,7 +28,9 @@ export default Controller.extend({
 
   isLength1: gte('firstName.length', 1),
   isLength2: gte('lastName.length', 1),
-  isConditionValid: and('isLength1', 'isLength2'),
+  isValid: match('firstName', /^[^0-9]+$/),
+  isValid2: match('lastName', /^[^0-9]+$/),
+  isConditionValid: and('isLength1', 'isLength2', 'isValid', 'isValid2'),
   isDisabled2: not('isConditionValid'),
 
   actions: {
