@@ -39,8 +39,9 @@ Our website provides
 1. The website can be run on Windows/Mac/Linux
 
 + Acquire the files
-Download all the files from https://github.com/Christian-Medina/CPSC-473-Project-2
-
+```sh
+git clone https://github.com/Christian-Medina/CPSC-473-Project-2.git
+```
 
 # User Documentation
 
@@ -62,9 +63,11 @@ Front-End
 
 Back-End
 + Ajax
-+ Deployd
-+ MongoDB
++ EmberFire for FireBase
 + NodeJs
+
+API
++ OMDB
 
 Development Tools
 + Atom
