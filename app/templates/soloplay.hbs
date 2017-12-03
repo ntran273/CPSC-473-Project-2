@@ -4,7 +4,7 @@
   <p>Start a game!</p>
   <button class="btn btn-primary btn-lg btn-block" {{action 'startGame'}}>Start</button>
 </div>
-<div class="jumbotron text-center" style="min-width:750px;" hidden= {{isDisabled}}>
+<div class="jumbotron text-center" style="min-width:750px; min-height:520px;" hidden= {{isDisabled}}>
   <p id="roundNumber"></p>
   {{#each model as |movie|}}
     <button id="{{movie.id}}" {{action 'isBestMovie' movie}} data-best-movie="{{movie.bestMovie}}">

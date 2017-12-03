@@ -116,7 +116,7 @@ export default Ember.Route.extend({
   },
   actions: {
     refresh(){
-    this.refresh();
+    this.location.reload(true);
   }
   }
 });
