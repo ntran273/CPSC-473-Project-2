@@ -13,6 +13,7 @@ import{
 } from '@ember/object/computed';
 
 export default Controller.extend({
+  
   isDisabled: true,
   gameNotStarted: false,
   roundFinished: false,
