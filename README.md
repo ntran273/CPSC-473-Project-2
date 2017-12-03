@@ -6,7 +6,7 @@ Ruth Madrid ruthm11@csu.fullerton.edu
 
 Nguyen Tran ntran272@csu.fullerton.edu
 
-Elizabeth Nguyen
+Elizabeth Nguyen syaora@csu.fullerton.edu
 
 David Slusser dslusser13@gmail.com
 
@@ -104,7 +104,7 @@ Development Tools
 This project is licensed under the MIT License - see the LICENSE.md file for details
 
 # Reference Link
-* [YoEmber] (http://yoember.com/)
+* [YoEmber](http://yoember.com/)
 * [EmberFire](https://github.com/firebase/emberfire)
 * [CSS3](https://www.w3schools.com/css/)
 * [ember.js](https://emberjs.com/)
