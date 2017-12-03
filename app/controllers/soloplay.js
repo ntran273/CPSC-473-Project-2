@@ -44,13 +44,19 @@ export default Controller.extend({
     },
     isBestMovie: function(movie) {
       if (movie.bestMovie == 'true') {
-        alert("Correct!");
+      setTimeout(function(){
+          alertify.alert().destroy();
+        }, 1000);
+        alertify.alert('Correct!').setHeader('');
         var mult = this.multiplier;
         var total = this.roundPoints + 10 * ++mult;
         this.set('roundPoints', total);
         this.set('multiplier', mult);
       } else {
-        alert("Wrong!")
+        setTimeout(function(){
+          alertify.alert().destroy();
+        }, 1000);
+        alertify.alert('Correct!').setHeader('');
         this.set('multiplier', 0);
       }
       this.set('roundFinished', true);
