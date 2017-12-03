@@ -56,7 +56,7 @@ export default Controller.extend({
         setTimeout(function(){
           alertify.alert().destroy();
         }, 1000);
-        alertify.alert('Correct!').setHeader('');
+        alertify.alert('Wrong!').setHeader('');
         this.set('multiplier', 0);
       }
       this.set('roundFinished', true);
