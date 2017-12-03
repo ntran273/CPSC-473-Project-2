@@ -23,6 +23,8 @@ David Slusser dslusser13@gmail.com
 
 5. Reference Links
 
+6. License
+
 # Project Scope
 
 + Project scope
@@ -43,8 +45,6 @@ You will need the following things properly installed on your computer.
 * [Node.js](https://nodejs.org/) (with npm)
 * [Ember CLI](https://ember-cli.com/)
 * [Google Chrome](https://google.com/chrome/)
-
-1. The website can be run on Windows/Mac/Linux
 
 ## Installation
 * `git clone https://github.com/Christian-Medina/CPSC-473-Project-2.git`
@@ -99,6 +99,9 @@ API
 
 Development Tools
 + Atom
+
+# License
+This project is licensed under the MIT License - see the LICENSE.md file for details
 
 # Reference Link
 * [YoEmber] (http://yoember.com/)
