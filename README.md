@@ -39,9 +39,9 @@ Our website provides
 1. The website can be run on Windows/Mac/Linux
 
 + Acquire the files
-```sh
-git clone https://github.com/Christian-Medina/CPSC-473-Project-2.git
-```
+* `git clone https://github.com/Christian-Medina/CPSC-473-Project-2.git
+* `cd CPSC-473-Project-2`
+* `npm install`
 
 # User Documentation
 
@@ -60,6 +60,7 @@ Languages
 Front-End
 + Bootstrap 3.3.7
 + Google Font APIs
++ Ember
 
 Back-End
 + Ajax
@@ -73,6 +74,6 @@ Development Tools
 + Atom
 
 # Reference Link
-
-+ http://docs.deployd.com/docs/collections/reference/dpd-js.html
++ https://github.com/firebase/emberfire
++ https://emberjs.com/
 + https://www.w3schools.com/css/
