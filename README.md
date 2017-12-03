@@ -101,6 +101,10 @@ Development Tools
 + Atom
 
 # Reference Link
-+ https://github.com/firebase/emberfire
-+ https://emberjs.com/
-+ https://www.w3schools.com/css/
+* [EmberFire](https://github.com/firebase/emberfire)
+* [CSS3](https://www.w3schools.com/css/)
+* [ember.js](https://emberjs.com/)
+* [ember-cli](https://ember-cli.com/)
+* Development Browser Extensions
+  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
+  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
