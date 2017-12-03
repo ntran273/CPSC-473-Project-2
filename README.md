@@ -46,7 +46,7 @@ You will need the following things properly installed on your computer.
 
 1. The website can be run on Windows/Mac/Linux
 
-+ Acquire the files
+## Installation
 * `git clone https://github.com/Christian-Medina/CPSC-473-Project-2.git`
 * `cd CPSC-473-Project-2`
 * `npm install`
