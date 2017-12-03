@@ -33,6 +33,8 @@ David Slusser dslusser13@gmail.com
 
 Our website provides
 
+# Installation and Configuration
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
@@ -41,8 +43,6 @@ You will need the following things properly installed on your computer.
 * [Node.js](https://nodejs.org/) (with npm)
 * [Ember CLI](https://ember-cli.com/)
 * [Google Chrome](https://google.com/chrome/)
-
-# Installation and Configuration
 
 1. The website can be run on Windows/Mac/Linux
 
