@@ -1,5 +1,7 @@
 import Ember from 'ember';
-import { observer } from '@ember/object';
+import {
+  observer
+} from '@ember/object';
 import Route from '@ember/routing/route';
 import $ from 'jquery';
 
@@ -45,8 +47,8 @@ function compareScores(movieRoundList) {
 function getThreeMovieTitles(masterMovieList) {
   var movieArray = [];
   for (var i = 0; i < 3; i++) {
-    var randomMovieIndex = Math.floor(Math.random() * masterMovieList.length);
-    var randomMovie = masterMovieList[randomMovieIndex - 1];
+    var randomMovieIndex = Math.floor(Math.random() * masterMovieList.length - 1) + 1;
+    var randomMovie = masterMovieList[randomMovieIndex];
     movieArray[i] = randomMovie;
   }
   return movieArray;
@@ -57,7 +59,7 @@ function getModelData() {
   var movieRoundList = [];
   var masterMovieList = {};
   jQuery.ajax({
-    url: 'movie_list.json',
+    url: 'test_list.json',
     success: function(result) {
       masterMovieList = result;
     },
@@ -142,7 +144,7 @@ export default Ember.Route.extend({
     this.controllerFor('soloplay').set('gameFinalScore', 0);
     this.controllerFor('soloplay').set('firstName', '');
     this.controllerFor('soloplay').set('lastName', '');
-    this.controllerFor('gameFinished', true);
+    this.controllerFor('soloplay').set('gameFinished', true);
   })
 });
 
