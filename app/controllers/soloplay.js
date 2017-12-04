@@ -28,8 +28,8 @@ export default Controller.extend({
 
   isLength1: gte('firstName.length', 1),
   isLength2: gte('lastName.length', 1),
-  isValid: match('firstName', /^[^0-9]+$/),
-  isValid2: match('lastName', /^[^0-9]+$/),
+  isValid: match('firstName', /^[A-Za-z]+$/),
+  isValid2: match('lastName', /^[A-Za-z]+$/),
   isConditionValid: and('isLength1', 'isLength2', 'isValid', 'isValid2'),
   isDisabled2: not('isConditionValid'),
 
