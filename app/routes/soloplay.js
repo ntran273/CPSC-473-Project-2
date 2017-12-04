@@ -1,4 +1,8 @@
 import Ember from 'ember';
+import { observer } from '@ember/object';
+import Route from '@ember/routing/route';
+import $ from 'jquery';
+
 var jQuery = Ember.$;
 
 function getMovieInfo(movieTitle) {
