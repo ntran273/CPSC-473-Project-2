@@ -1,4 +1,8 @@
 import Ember from 'ember';
+import { observer } from '@ember/object';
+import Route from '@ember/routing/route';
+import $ from 'jquery';
+
 var jQuery = Ember.$;
 
 function getMovieInfo(movieTitle) {
@@ -53,7 +57,7 @@ function getModelData() {
   var movieRoundList = [];
   var masterMovieList = {};
   jQuery.ajax({
-    url: 'movie_list.json',
+    url: 'test_list.json',
     success: function(result) {
       masterMovieList = result;
     },
