@@ -59,7 +59,7 @@ function getModelData() {
   var movieRoundList = [];
   var masterMovieList = {};
   jQuery.ajax({
-    url: 'test_list.json',
+    url: 'movie_list.json',
     success: function(result) {
       masterMovieList = result;
     },
