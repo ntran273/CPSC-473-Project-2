@@ -142,7 +142,7 @@ export default Ember.Route.extend({
     this.controllerFor('soloplay').set('gameFinalScore', 0);
     this.controllerFor('soloplay').set('firstName', '');
     this.controllerFor('soloplay').set('lastName', '');
-    this.controllerFor('gameFinished', true);
+    this.controllerFor('soloplay').set('gameFinished', true);
   })
 });
 
