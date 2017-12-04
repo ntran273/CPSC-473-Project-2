@@ -44,19 +44,23 @@ export default Controller.extend({
     },
     isBestMovie: function(movie) {
       if (movie.bestMovie == 'true') {
-      setTimeout(function(){
-          alertify.alert().destroy();
-        }, 1000);
-        alertify.alert('Correct!').setHeader('');
+      // setTimeout(function(){
+      //     alertify.alert().destroy();
+      //   }, 1000);
+      //   alertify.alert('Correct!').setHeader('');
+      alertify.set('notifier','position', 'top-center');
+      alertify.success('Correct');
         var mult = this.multiplier;
         var total = this.roundPoints + 10 * ++mult;
         this.set('roundPoints', total);
         this.set('multiplier', mult);
       } else {
-        setTimeout(function(){
-          alertify.alert().destroy();
-        }, 1000);
-        alertify.alert('Wrong!').setHeader('');
+        // setTimeout(function(){
+        //   alertify.alert().destroy();
+        // }, 1000);
+        // alertify.alert('Wrong!').setHeader('');
+        alertify.set('notifier','position', 'top-center');
+        alertify.error('Wrong');
         this.set('multiplier', 0);
       }
       this.set('roundFinished', true);
@@ -76,7 +80,7 @@ export default Controller.extend({
       } else {
         var score = this.roundPoints;
         //push final <<score>> to database here
-        alert("Game finished! Final score: " + score);
+        alertify.success("Game finished! Final score: " + score);
         this.set('gameFinalScore', score);
         //hide jumbotrons
         this.set('gameNotStarted', true);
@@ -101,7 +105,7 @@ export default Controller.extend({
       });
       newUser.save();
 
-      alert('Success');
+      alertify.success('Successfully Created');
       //this.set('responseMessage', `Thank you! We saved your firstName and LastName with the following id: ${response.get('id')}`);
       this.set('isDisabled', true);
       this.set('gameNotStarted', false);
