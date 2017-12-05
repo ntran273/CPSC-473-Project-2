@@ -5,6 +5,7 @@
 <table class="table table-bordered table-striped table-hover">
   <thead class="bg-primary">
     <tr>
+      <th>#</th>
       <th>First Name</th>
       <th>Last Name</th>
       <th>Score</th>
@@ -13,7 +14,8 @@
   <tbody>
   {{#each model as |user|}}
     <tr>
-      <th>{{user.firstName}}</th>
+      <td></td>
+      <td>{{user.firstName}}</td>
       <td>{{user.lastName}}</td>
       <td>{{user.score}}</td>
     </tr>
