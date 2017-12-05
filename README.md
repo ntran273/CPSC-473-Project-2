@@ -1,4 +1,4 @@
-CPSC-473-Project-2
+# CPSC-473-Project-2
 
 Christian Medina christian.medina@csu.fullerton.edu
 
